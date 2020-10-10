@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_height="match_parent"
+    tools:context=".PermissionActivity">
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_round"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Permission Request"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="36dp"
+            android:text="Places project need  to persmisson to accesss details Places project need  to persmisson to accesss details Places project need  to persmisson to accesss details Places project need  to persmisson to accesss details"
+    />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_grant"
+        android:textAllCaps="false"
+        android:text="Grant Permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        />
+
+</RelativeLayout>

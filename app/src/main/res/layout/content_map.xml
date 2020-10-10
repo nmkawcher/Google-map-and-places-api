@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity"
+    ><!--tools:showIn="@layout/activity_map"-->
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imagview"
+        android:layout_centerInParent="true"
+        android:translationY="18dp"
+        android:src="@drawable/place_holder"
+        />
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchBar"
+        style="@style/MaterialSearchBarLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:outlineProvider="bounds"
+        app:mt_hint="Custom hint"
+        android:layout_margin="10dp"
+        app:mt_maxSuggestionsCount="10"
+        app:mt_navIconEnabled="true"
+        app:mt_placeholder="Search a place"
+        app:mt_speechMode="true" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Find Restaurants"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
